@@ -1,7 +1,9 @@
-# Make a Spell Checker!
+# Overview
 
 Write a program that checks spelling. The input to the program is a dictionary file containing a list of valid words and a file containing the text to be checked.
 You can use the `dictionary.txt` file included here as your dictionary.
+
+---
 
 # Running the program
 
@@ -20,6 +22,8 @@ You can use the `dictionary.txt` file included here as your dictionary.
 | 6     | 'mesage'    | 3    | 22     | 'paragrap with some ...'  | [ 'degage', 'dosage', 'manage', ... 18 more items ]        |
 | 7     | 'undrstood' | 3    | 26     | 'agrap with some typo...' | [ 'undertook', 'underwood' ]                               |
 
+---
+
 ## Retro
 
 This ended up being more complicated than I had anticipated when first starting on it.
@@ -31,6 +35,8 @@ The main area where I got stuck, however, was correctly grabbing the line, colum
 In my previous role, I had some exposure to vendor matching logic based on vendor name/address/contact info. So I pulled from that experience to create a very simple/rudimentary `findSimilarWords()` method to add to the logic. It's not production ready, but it at least provides some basic functionality with some possible dictionary matches for the misspelled words. The biggest flaw is that there is a nested loop in there, so the time complexity of this method is O(n^2). I'm sure it could be improved by implementing a proper data structure, but time got the best of me and I couldn't deliver on that in the current iteration.
 
 Unfortunately, I was unable to make it to the final feature request: Handling proper nouns correctly. I'm currently converting the words to lowercase as I iterate through them and check to see if they are in the dictionary, so I would have to do some adjustments there.
+
+---
 
 ## The Features
 
