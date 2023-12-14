@@ -11,16 +11,9 @@ You can use the `dictionary.txt` file included here as your dictionary.
 1. In your terminal, run `node josh-allan-spellchecker dictionary.txt file-to-check.txt`.
 1. The output of the spell checker should look as follows:
 
-| index | word        | line | column | context                   | possible_matches                                           |
-| ----- | ----------- | ---- | ------ | ------------------------- | ---------------------------------------------------------- |
-| 0     | 'ths'       | 1    | 1      | 'Ths is an eample of ...' | [ 'ohs', 'tas', 'the', ... 3 more items ]                  |
-| 1     | 'eample'    | 1    | 4      | 'is an eample of a p...'  | [ 'damply', 'dapple', 'dimple', ... 15 more items ]        |
-| 2     | 'a'         | 3    | 6      | 's an eample of a par...' | []                                                         |
-| 3     | 'paragrap'  | 1    | 7      | 'an eample of a para...'  | [ 'barograph', 'paradrop', 'paradrops', ... 7 more items ] |
-| 4     | 'th'        | 3    | 13     | 'mple of a paragrap w...' | [ 'the', 'tho', 'thy' ]                                    |
-| 5     | 'correclty' | 3    | 19     | 'f a paragrap with so...' | [ 'correct', 'corrected', 'correcter', ... 4 more items ]  |
-| 6     | 'mesage'    | 3    | 22     | 'paragrap with some ...'  | [ 'degage', 'dosage', 'manage', ... 18 more items ]        |
-| 7     | 'undrstood' | 3    | 26     | 'agrap with some typo...' | [ 'undertook', 'underwood' ]                               |
+| index | word  | line | column | context                   | possible_matches                          |
+| ----- | ----- | ---- | ------ | ------------------------- | ----------------------------------------- |
+| 0     | 'ths' | 1    | 1      | 'Ths is an eample of ...' | [ 'ohs', 'tas', 'the', ... 3 more items ] |
 
 ---
 
